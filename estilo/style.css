@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: linear-gradient(to left, rgba(137, 43, 226, 0.971), rgba(255, 166, 0, 0.900));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.titulo-pagina{
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: blueviolet;
+}
+
+/*Configurando a foto + logo*/
+.caixa-um-foto-nome{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.caixa-um-foto-nome:hover{
+    cursor: pointer;
+}
+.caixa-um-foto-nome .dentro-foto{
+    margin-right: 20px;
+}
+
+.caixa-um-foto-nome .dentro-nome{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+/*Configurando os 2 botões (cadastro + login)*/
+.caixa-dois-menu{
+    display: flex;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+.caixa-dois-menu a{
+    text-decoration: none;
+    color: black;
+}
+.caixa-dois-menu .cadastro{
+    border: 3px solid #ffffff;
+    border-image-slice: 10;
+    padding: 15px;
+    margin-right: 30px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 250ms;
+}
+.caixa-dois-menu .cadastro:hover{
+    cursor: pointer;
+    border-image-slice: 10;
+    transition: 250ms;
+    box-shadow: 5px 5px 10px black;
+}
+.caixa-dois-menu .login{
+    border: 3px solid #ffffff;
+    border-image-slice: 10;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 250ms;
+}
+.caixa-dois-menu .login:hover{
+    cursor: pointer;
+    border-image-slice: 10;
+    transition: 250ms;
+    box-shadow: 5px 5px 10px black;
+}
+
+.caixa-dois-menu a{
+    color: white;
+}
+
+/*Configurando os quadros*/
+.meio{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.quadro{
+    border: 3px solid black;
+    border-image: url('../midia/laranja-roxo.png');
+    border-image-slice: 10;
+    width: 500px;
+    height: 170px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    transition: 250ms;
+}
+.quadro:hover{
+    border-image: url('../midia/roxo-laranja.jpg');
+    border-image-slice: 10;
+    transition: 250ms;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+}
+.quadro-texto{
+    margin-left: 15px;
+}
+.quadro-texto .titulo{
+    text-align: center;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: blueviolet;
+}
+.quadro-texto .texto{
+    text-align: justify;
+    text-indent: 20px;
+}

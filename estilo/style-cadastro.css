@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div.cabeca{
+    background-image: linear-gradient(to left, rgba(137, 43, 226, 0.971), rgba(255, 166, 0, 0.900));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:  15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.cabeca a{
+    text-decoration: none;
+}
+
+.titulo-pagina{
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: blueviolet;
+}
+
+/*Configurando a foto + logo*/
+.caixa-um-foto-nome{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.caixa-um-foto-nome:hover{
+    cursor: pointer;
+}
+.caixa-um-foto-nome .dentro-foto{
+    margin-right: 20px;
+}
+
+.caixa-um-foto-nome .dentro-nome{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+/*Configurando os 2 botões (cadastro + login)*/
+.caixa-dois-menu{
+    display: flex;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+.caixa-dois-menu a{
+    text-decoration: none;
+    color: black;
+}
+.caixa-dois-menu .cadastro{
+    border: 3px solid #ffffff;
+    border-image-slice: 10;
+    padding: 15px;
+    margin-right: 30px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 250ms;
+}
+.caixa-dois-menu .cadastro:hover{
+    cursor: pointer;
+    border-image-slice: 10;
+    transition: 250ms;
+    box-shadow: 5px 5px 10px black;
+}
+.caixa-dois-menu .login{
+    border: 3px solid #ffffff;
+    border-image-slice: 10;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 250ms;
+}
+.caixa-dois-menu .login:hover{
+    cursor: pointer;
+    border-image-slice: 10;
+    transition: 250ms;
+    box-shadow: 5px 5px 10px black;
+}
+
+.caixa-dois-menu a{
+    color: white;
+}
+
+/*Configurando o painel*/
+.painel{
+    border: 3px solid black;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+
+
+.painel main{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+main .pt-dois{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+.foto{
+    text-align: center;
+}
+
+.foto img{
+    width: 200px;
+}
+
+div.pt-dois form{
+    width: 350px;
+    margin: auto;
+}
+
+div.pt-dois form p{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+div.pt-dois form input{
+    font-size: 20px;
+    width: 100%;
+    border-image: url('../midia/roxo-laranja.jpg');
+    border-image-slice: 10;
+    margin-bottom: 10px;
+}
+
+#espaco{
+    margin-bottom: 15px;
+}
+
+.logar{
+    width: 180px;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+
+.logar p:hover{
+    transition: 250ms;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+.logar p{
+    background-image: url(../midia/roxo-laranja.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 180px;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 5px;
+    transition: 250ms;
+}
+
